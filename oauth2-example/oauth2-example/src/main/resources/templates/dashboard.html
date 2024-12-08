@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+</head>
+<body>
+<h1>Welcome, <span th:text="${name}"></span>!</h1>
+<p>Your Access Token:</p>
+<textarea readonly rows="5" cols="80" th:text="${accessToken}"></textarea>
+<br>
+<p>Your Refresh Token:</p>
+<textarea readonly rows="5" cols="80" th:text="${refreshToken}"></textarea>
+<br>
+<a href="/logout">Logout</a>
+</body>
+</html>
